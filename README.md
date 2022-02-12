@@ -28,4 +28,4 @@ yarn start
 
 # Contribution
 
-This is an Open Source Project, hence contributions are open, small or big, just, create a Pull Request and it will be accepted and merged by the CyberSpiders Team members once it is stable with the on going developement
+This is an Open Source Project, hence contributions are open, small or big, just fork, modify, upload and create a Pull Request, it will be accepted and merged by the CyberSpiders Team members once it is stable with the on going developement procedures.
