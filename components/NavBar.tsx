@@ -22,7 +22,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="m-3 mt-0 flex flex-wrap items-center rounded-2xl bg-slate-900 p-3">
+      <nav className="top-0 flex flex-wrap items-center bg-slate-900 p-3">
         <Link href="/">
           <a className="mr-4 inline-flex items-center p-2 ">
             <span className="text-xl font-bold tracking-wide text-white">

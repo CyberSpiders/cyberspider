@@ -1,8 +1,10 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { BsChevronDoubleDown } from 'react-icons/bs'
-import { FaArrowRight } from 'react-icons/fa'
+import { FaTools } from 'react-icons/fa'
+import { IoNewspaperOutline } from 'react-icons/io5'
+import Card from '../components/Card'
 import Header from '../components/Header'
-import { Navbar } from '../components/NavBar'
 
 const Homepage = () => {
   return (
@@ -12,10 +14,9 @@ const Homepage = () => {
         url=""
         description="CyberSpiders - A Hacker\'s Warehouse"
       />
-      <Navbar />
       <section className="flex min-h-screen flex-col items-center justify-center">
         <div>
-          <div className="text-center">
+          <div className="flex items-center gap-10 text-center">
             <div>
               <h1 className="animate-pulse bg-gradient-to-r from-slate-300 to-slate-400 bg-clip-text font-ubuntu text-8xl text-transparent">
                 CyberSpiders
@@ -24,7 +25,16 @@ const Homepage = () => {
                 A Hacker's Warehouse
               </p>
             </div>
-            <div>{/* Maybe the side image */}</div>
+            <div>
+              <Image
+                src="/img/mascot.png"
+                width={150}
+                height={150}
+                alt="Mascot"
+                placeholder="blur"
+                blurDataURL="/img/mascot.png"
+              />
+            </div>
           </div>
         </div>
         <div className="absolute bottom-7">
@@ -38,35 +48,32 @@ const Homepage = () => {
         className="flex min-h-screen flex-col items-center justify-center text-center"
       >
         <div>
-          <div>
+          {/* <div className="flex items-center"> */}
+          <div className="">
             <div className="">
               <h1 className="font-ubuntu text-5xl">What is CyberSpider?</h1>
-              <p className="break-normal">
+              <p className="mx-auto w-1/2 break-words">
                 CyberSpider is a project that links the frequently used websites
                 and sources that a Cyber Security Enthusiast visits.
               </p>
             </div>
-            <div className="m-10 mx-2 grid grid-cols-2 items-center justify-center">
-              <div className="m-3 border-4 border-slate-800 px-2 py-3">
-                <h1>News</h1>
-                <p>
-                  All the news that you need releated to cyber at just one stop!
-                </p>
-                <Link href="/">
-                  <a className="flex items-center justify-center">
-                    Read More <FaArrowRight className="ml-3" />
-                  </a>
-                </Link>
-              </div>
-              <div className="m-3  border-4 border-slate-800 py-3 px-2">
-                <h1>Tools</h1>
-                <p>A few tools to make your day hackable</p>
-                <Link href="/">
-                  <a className="flex items-center justify-center">
-                    Read More <FaArrowRight className="ml-3" />
-                  </a>
-                </Link>
-              </div>
+            <div className="m-10 mx-2 flex items-center justify-center sm:flex">
+              <Card
+                title="News"
+                description="All the news that you need releated to cyber at just one stop!"
+                url="news"
+                ctitle="text-yellow-400 text-3xl font-ubuntu"
+              >
+                <IoNewspaperOutline className="ml-3" />
+              </Card>
+              <Card
+                title="Tools"
+                description="A few tools to make your day hackable with ease!"
+                url="tools"
+                ctitle="text-sky-400 text-3xl font-ubuntu"
+              >
+                <FaTools className="ml-3" />
+              </Card>
             </div>
           </div>
         </div>
