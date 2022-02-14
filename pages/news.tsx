@@ -9,12 +9,16 @@ interface Data {
   __v: number
 }
 
-const Newspage = ({ data }) => {
+interface input {
+  data: any
+}
+
+const Newspage: React.FC<input> = ({ data }) => {
   return (
     <div>
       <div>
         <div>
-          {data.map((val) => (
+          {data.map((val: any) => (
             <div key={val._id}>
               <Newscomp id={val._id} title={val.title} desc={val.desc} />
             </div>
