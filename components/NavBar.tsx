@@ -22,7 +22,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="top-0 flex flex-wrap items-center bg-slate-900 p-3">
+      <nav className="top-0 flex w-full flex-wrap items-center bg-slate-900 p-3">
         <Link href="/">
           <a className="mr-4 inline-flex items-center p-2 ">
             <span className="text-xl font-bold tracking-wide text-white">
@@ -65,7 +65,7 @@ export const Navbar = () => {
                 About
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/news">
               <a className="w-full items-center justify-center rounded px-3 py-2 font-bold text-white hover:bg-slate-700 hover:text-white lg:inline-flex lg:w-auto">
                 News
               </a>
@@ -86,14 +86,12 @@ export const Navbar = () => {
                   <FaGithub />
                 </a>
               </Link>
-              <Link href="/">
-                <a
-                  onClick={switchTheme}
-                  className="w-full items-center justify-center rounded px-3 py-2 font-bold text-white hover:bg-slate-700 hover:text-white"
-                >
-                  {theme === 'light' ? <FaMoon /> : <FaSun />}
-                </a>
-              </Link>
+              <button
+                onClick={switchTheme}
+                className="w-full items-center justify-center rounded px-3 py-2 font-bold text-white hover:bg-slate-700 hover:text-white"
+              >
+                {theme === 'light' ? <FaMoon /> : <FaSun />}
+              </button>
             </div>
           </div>
         </div>
