@@ -15,6 +15,7 @@ const Header: React.FC<Format> = ({ name, description, url }) => {
         <meta name="title" content={name} />
         <meta name="description" content={description} />
         <meta name="image" content="https://imgur.com/a/5CPWsrm" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
         <meta property="og:type" content="website" />
         <meta
