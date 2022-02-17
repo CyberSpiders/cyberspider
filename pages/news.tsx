@@ -1,12 +1,15 @@
 import { GetServerSideProps } from 'next'
 import React from 'react'
+import Header from '../components/Header'
 import Newscomp from '../components/Newscomp'
 
 interface Data {
-  _id: string
+  id: number
   title: string
-  desc: string
-  __v: number
+  author: string
+  points: number
+  comments: number
+  link: string
 }
 
 interface input {
@@ -16,11 +19,22 @@ interface input {
 const Newspage: React.FC<input> = ({ data }) => {
   return (
     <div>
+      <Header
+        name="CyberSpider | News"
+        description="CyberSpider page for HackerNews"
+        url="https://cyberspider.vercel.app/news"
+      />
       <div>
         <div>
           {data.map((val: any) => (
-            <div key={val._id}>
-              <Newscomp id={val._id} title={val.title} desc={val.desc} />
+            <div key={val.id}>
+              <Newscomp
+                title={val.title}
+                author={val.author}
+                comments={val.comments}
+                link={val.link}
+                points={val.points}
+              />
             </div>
           ))}
         </div>
@@ -30,7 +44,7 @@ const Newspage: React.FC<input> = ({ data }) => {
 }
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const res = await fetch('http://hcdbapi.herokuapp.com/s1/all')
+  const res = await fetch('https://hnapi-production.up.railway.app/api/v1/news')
   const data: Data = await res.json()
 
   return {
