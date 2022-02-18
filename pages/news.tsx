@@ -20,9 +20,9 @@ const Newspage: React.FC<input> = ({ data }) => {
   return (
     <div>
       <Header
-        name="CyberSpider | News"
+        name="News"
         description="CyberSpider page for HackerNews"
-        url="https://cyberspider.vercel.app/news"
+        url="news"
       />
       <div>
         <div>

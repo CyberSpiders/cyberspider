@@ -18,7 +18,7 @@ const Homepage = () => {
         <div>
           <div className="flex items-center gap-10 text-center">
             <div>
-              <h1 className="animate-pulse bg-gradient-to-r from-slate-300 to-slate-400 bg-clip-text font-ubuntu text-8xl text-transparent">
+              <h1 className=" bg-gradient-to-r from-slate-300 to-slate-400 bg-clip-text font-ubuntu text-8xl text-transparent">
                 CyberSpiders
               </h1>
               <p className="font-mono text-xl text-teal-200">
@@ -28,8 +28,8 @@ const Homepage = () => {
             <div>
               <Image
                 src="/img/mascot.png"
-                width={150}
-                height={150}
+                width={200}
+                height={200}
                 alt="Mascot"
                 placeholder="blur"
                 blurDataURL="/img/mascot.png"
@@ -53,8 +53,8 @@ const Homepage = () => {
             <div className="">
               <h1 className="font-ubuntu text-5xl">What is CyberSpider?</h1>
               <p className="mx-auto w-1/2 break-words">
-                CyberSpider is a project that links the frequently used websites
-                and sources that a Cyber Security Enthusiast visits.
+                CyberSpider is an News Aggregator that keeps Cyber Security
+                Enthusiasts updated with the current news, via the HackerNew.
               </p>
             </div>
             <div className="m-10 mx-2 flex items-center justify-center sm:flex">
@@ -66,14 +66,14 @@ const Homepage = () => {
               >
                 <IoNewspaperOutline className="ml-3" />
               </Card>
-              <Card
+              {/* <Card
                 title="Tools"
                 description="A few tools to make your day hackable with ease!"
                 url="tools"
                 ctitle="text-sky-400 text-3xl font-ubuntu"
               >
                 <FaTools className="ml-3" />
-              </Card>
+              </Card> */}
             </div>
           </div>
         </div>

@@ -60,7 +60,7 @@ export const Navbar = () => {
                 Home
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/about">
               <a className="w-full items-center justify-center rounded px-3 py-2 font-bold text-white hover:bg-slate-700 hover:text-white lg:inline-flex lg:w-auto">
                 About
               </a>
@@ -70,9 +70,9 @@ export const Navbar = () => {
                 News
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/resource">
               <a className="w-full items-center justify-center rounded px-3 py-2 font-bold text-white hover:bg-slate-700 hover:text-white lg:inline-flex lg:w-auto">
-                Contact
+                Resource
               </a>
             </Link>
             <div className="flex items-center justify-evenly">
