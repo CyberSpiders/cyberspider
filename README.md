@@ -10,7 +10,9 @@ Website: https://cyberspider.vercel.app
 
 - Framework - Next.js
 - CSS Framework - Tailwind CSS
-- Backend - Python Flask For API
+- Backend - Python Django For API
+- API Hosting - Railway.app
+- Website Hosting - Vercel
 
 ## How to use
 

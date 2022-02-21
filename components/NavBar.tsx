@@ -2,19 +2,10 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { FaDiscord, FaGithub, FaMoon, FaSun } from 'react-icons/fa'
 import { useTheme } from 'next-themes'
+import Image from 'next/image'
 
 export const Navbar = () => {
   const [active, setActive] = useState(false)
-  const [mount, setMount] = useState(false)
-  const { theme, setTheme } = useTheme()
-  useEffect(() => {
-    setMount(true)
-  }, [])
-  const switchTheme = () => {
-    if (mount) {
-      setTheme(theme === 'light' ? 'dark' : 'light')
-    }
-  }
 
   const handleClick = () => {
     setActive(!active)
@@ -24,11 +15,14 @@ export const Navbar = () => {
     <>
       <nav className="top-0 flex w-full flex-wrap items-center bg-slate-900 p-3">
         <Link href="/">
-          <a className="mr-4 inline-flex items-center p-2 ">
-            <span className="text-xl font-bold tracking-wide text-white">
-              CyberSpiders
-            </span>
-          </a>
+          <div className="flex items-center hover:cursor-pointer">
+            <Image src="/img/mascot.png" width={32} height={32} alt="logo" />
+            <a className="mr-4 inline-flex items-center p-2 ">
+              <span className="text-xl font-bold tracking-wide text-white">
+                CyberSpiders
+              </span>
+            </a>
+          </div>
         </Link>
         <button
           className=" ml-auto inline-flex rounded p-3 text-white outline-none hover:bg-slate-700 hover:text-white lg:hidden"
@@ -86,12 +80,6 @@ export const Navbar = () => {
                   <FaGithub />
                 </a>
               </Link>
-              <button
-                onClick={switchTheme}
-                className="w-full items-center justify-center rounded px-3 py-2 font-bold text-white hover:bg-slate-700 hover:text-white"
-              >
-                {theme === 'light' ? <FaMoon /> : <FaSun />}
-              </button>
             </div>
           </div>
         </div>

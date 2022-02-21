@@ -18,16 +18,18 @@ const Card: React.FC<CardType> = ({
   children,
 }) => {
   return (
-    <div className="m-3 rounded-2xl bg-gray-600 px-3 py-4 hover:animate-pulse">
-      <h1 className="flex items-center justify-center text-2xl">
-        <div className={ctitle}>{title}</div>
-        {children}
-      </h1>
-      <p>{description}</p>
+    <div className="m-3 rounded-2xl bg-gray-600 px-3 py-4 hover:cursor-pointer">
       <Link href={'/'.concat(url)}>
-        <a className="flex items-center justify-center border-b-2 border-gray-600">
-          Read More <FaLongArrowAltRight className="ml-4" />
-        </a>
+        <div>
+          <h1 className="flex items-center justify-center text-2xl">
+            <div className={ctitle}>{title}</div>
+            {children}
+          </h1>
+          <p>{description}</p>
+          <a className="flex items-center justify-center border-b-2 border-gray-600">
+            Read More <FaLongArrowAltRight className="ml-4" />
+          </a>
+        </div>
       </Link>
     </div>
   )

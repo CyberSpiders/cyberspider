@@ -16,12 +16,12 @@ const Homepage = () => {
       />
       <section className="flex min-h-screen flex-col items-center justify-center">
         <div>
-          <div className="flex items-center gap-10 text-center">
+          <div className="flex-col items-center gap-10 text-center md:flex-row">
             <div>
-              <h1 className=" bg-gradient-to-r from-slate-300 to-slate-400 bg-clip-text font-ubuntu text-8xl text-transparent">
+              <h1 className="bg-gradient-to-r from-slate-300 to-slate-400 bg-clip-text font-ubuntu text-5xl text-transparent sm:text-8xl">
                 CyberSpiders
               </h1>
-              <p className="font-mono text-xl text-teal-200">
+              <p className="mt-2 font-mono text-teal-200">
                 A Hacker's Warehouse
               </p>
             </div>
@@ -51,9 +51,11 @@ const Homepage = () => {
           {/* <div className="flex items-center"> */}
           <div className="">
             <div className="">
-              <h1 className="font-ubuntu text-5xl">What is CyberSpider?</h1>
-              <p className="mx-auto w-1/2 break-words">
-                CyberSpider is an News Aggregator that keeps Cyber Security
+              <h1 className="font-ubuntu text-4xl font-bold md:text-5xl">
+                What is CyberSpiders?
+              </h1>
+              <p className="mx-auto w-1/2 break-words text-lg md:text-xl">
+                CyberSpiders is an News Aggregator that keeps Cyber Security
                 Enthusiasts updated with the current news, via the HackerNew.
               </p>
             </div>
@@ -66,14 +68,6 @@ const Homepage = () => {
               >
                 <IoNewspaperOutline className="ml-3" />
               </Card>
-              {/* <Card
-                title="Tools"
-                description="A few tools to make your day hackable with ease!"
-                url="tools"
-                ctitle="text-sky-400 text-3xl font-ubuntu"
-              >
-                <FaTools className="ml-3" />
-              </Card> */}
             </div>
           </div>
         </div>

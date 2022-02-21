@@ -21,7 +21,7 @@ const Newspage: React.FC<input> = ({ data }) => {
     <div>
       <Header
         name="News"
-        description="CyberSpider page for HackerNews"
+        description="CyberSpiders page for HackerNews"
         url="news"
       />
       <div>

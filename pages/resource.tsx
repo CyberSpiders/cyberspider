@@ -15,11 +15,11 @@ const resource = () => {
         url="resource"
       />
       <div className="bg-slate-700 p-10 text-center">
-        <h1 className="text-3xl">About CyberSpider</h1>
+        <h1 className="text-3xl">About CyberSpiders</h1>
       </div>
 
-      <div className="m-12 flex flex-col items-center justify-center">
-        <div className="flex items-center">
+      <div className="m-12 flex flex-col items-center justify-center md:flex">
+        <div className="flex-col items-center md:flex">
           <Resource
             name="Website Source Code"
             description="CyberSpider's Website Source Code Available on GitHub"
@@ -35,7 +35,7 @@ const resource = () => {
             <FaDiscord className="mx-auto text-blue-700" />
           </Resource>
         </div>
-        <div className="flex items-center">
+        <div className="flex-col items-center md:flex">
           <Resource
             name="News Scraper"
             description="News Scraper Source Code on GitHub"
@@ -51,7 +51,7 @@ const resource = () => {
             <FaGithub className="mx-auto text-black" />
           </Resource>
         </div>
-        <div className="flex items-center">
+        <div className="flex-col items-center md:flex">
           <Resource
             name="Website Hosting"
             description="Website is hosted on Vercel"
