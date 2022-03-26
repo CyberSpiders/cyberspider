@@ -70,7 +70,7 @@ export const Navbar = () => {
               </a>
             </Link>
             <div className="flex items-center justify-evenly">
-              <Link href="https://discord.gg/Mq8xpfWV">
+              <Link href="https://discord.gg/yzEWP2gzYm">
                 <a className="w-full items-center justify-center rounded px-3 py-2 font-bold text-white hover:bg-slate-700 hover:text-white">
                   <FaDiscord />
                 </a>
