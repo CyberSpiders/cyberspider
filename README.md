@@ -4,7 +4,7 @@ This is the frontend project of the CyberSpiders Team.
 
 ## Preview
 
-Website: https://cyberspider.vercel.app
+Website: https://cyberspiders.vercel.app
 
 ## Technical Stack
 
