@@ -2,7 +2,7 @@ import React from 'react'
 import { AiFillApi } from 'react-icons/ai'
 import { BsFillFileEarmarkZipFill, BsFillTriangleFill } from 'react-icons/bs'
 import { FaDiscord, FaGithub } from 'react-icons/fa'
-import { SiRailway } from 'react-icons/si'
+import { SiHeroku, SiRailway } from 'react-icons/si'
 import Header from '../components/Header'
 import Resource from '../components/Resource'
 
@@ -39,7 +39,7 @@ const resource = () => {
           <Resource
             name="News Scraper"
             description="News Scraper Source Code on GitHub"
-            url="https://github.com/CyberSpiders/cyberspiderapi"
+            url="https://github.com/CyberSpiders/hnapi"
           >
             <AiFillApi className="mx-auto text-emerald-500" />
           </Resource>
@@ -61,10 +61,10 @@ const resource = () => {
           </Resource>
           <Resource
             name="API Hosting"
-            description="API is hosted on Railways"
-            url="https://railway.app/"
+            description="API is hosted on Heroku"
+            url="https://www.heroku.com/"
           >
-            <SiRailway className="mx-auto text-purple-700" />
+            <SiHeroku className="mx-auto font-bold text-purple-700" />
           </Resource>
         </div>
       </div>

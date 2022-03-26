@@ -44,7 +44,7 @@ const Newspage: React.FC<input> = ({ data }) => {
 }
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-  const res = await fetch('https://hnapi-production.up.railway.app/api/v1/news')
+  const res = await fetch('https://hnscrapeapi.herokuapp.com/api/v1/news/')
   const data: Data = await res.json()
 
   return {
